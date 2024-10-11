@@ -1,0 +1,9 @@
+<p>lista-de-tareas works!</p>
+
+<form class="Form-ingreso" action="" [formGroup]="listadetareas" (ngSubmit)="onsubmit()">
+<input class="controls" placeholder="Ingrese su nombre" name="nombre" formControlName="nombre" type="text" required> <br>
+<input class="controls" placeholder="Ingrese tu apellido" name="apellido" type="text" formControlName="apellido" required> <br>
+<button class="botons" type="submit">crear</button>
+</form>
+
+<app-mostrar-datos></app-mostrar-datos>

@@ -1,0 +1,9 @@
+
+<form class="registro-usuarios" [formGroup]="formularioDeRegistro" (ngSubmit)="enviar()" >
+    <p>registro-usuarios works!</p>
+    <input class="controls" placeholder="Ingrese tu nombre" name="nombre" type="text" required><br>
+    <input class="controls" placeholder="Ingrese tu apellido" name="apellido" type="text" required><br>
+    <input class="controls" placeholder="seleccione un archivo" type="file" name="file" id="file" required><br>
+    <input class="controls" placeholder="Ingrese tu contraseña" name="contraseña" type="password" required><br>
+    <button class="botons" type="submit">iniciar-secion</button><br>
+</form>

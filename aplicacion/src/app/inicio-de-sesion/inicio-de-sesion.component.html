@@ -1,0 +1,13 @@
+
+<form class="form-register1" [formGroup]="formulariodeinicio1" (ngSubmit)="onsubmit()">
+    <p>Inicio de sesión!</p>
+    <input class="controls" placeholder="Ingrese nombre" name="nombre" type="text" formControlName="nombre" required> <br>
+    <input class="controls" placeholder="Ingrese tu apellido" name="apellido" type="text" formControlName="apellido" required> <br>
+    <input class="controls" placeholder="Ingrese tu correo" name="correo" type="email" formControlName="correo" required> <br>
+    <input class="controls" placeholder="Ingrese tu contraseña" name="contraseñaa" type="password" formControlName="contraseña" required> <br>
+    <button class="botons" type="submit">iniciar-secion</button>
+</form>
+
+<app-mostrar-datos></app-mostrar-datos>
+
+<app-panel-de-control></app-panel-de-control>    

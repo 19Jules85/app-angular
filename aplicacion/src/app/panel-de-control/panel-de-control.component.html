@@ -1,0 +1,27 @@
+<h1 *ngIf="this.usuariosDatos.nombre">Bienvenido {{this.usuariosDatos.nombre}} al panel de control</h1>
+<h1 *ngIf="!this.usuariosDatos.nombre">Bienvenido sin nombre al panel de control</h1>
+
+<h1 *ngIf="this.usuariosDatos.apellido">Bienvenido {{this.usuariosDatos.apellido}} al panel de control</h1>
+<h1 *ngIf="!this.usuariosDatos.apellido">Bienvenido sin apellido al panel de control</h1>
+
+<p> {{this.usuariosDatos | json}} </p>
+
+
+<ol *ngIf="!this.usuariosDatos.nombre">Datos incompletos (nombre)</ol>
+<ol *ngIf="!this.usuariosDatos.apellido">Datos incompletos (apellido)</ol>
+<ol *ngIf="!this.usuariosDatos.correo">Datos incompletos (correo)</ol>
+
+<!--"Solucion como la habia pensado (Tu solucion esta bien)"-->
+
+<ol>
+    <li *ngIf="this.usuariosDatos.nombre">{{this.usuariosDatos.nombre}}</li>
+    <li *ngIf="!this.usuariosDatos.nombre">Nombre no cargado</li>
+    <li *ngIf="this.usuariosDatos.apellido">{{this.usuariosDatos.apellido}}</li>
+    <li *ngIf="!this.usuariosDatos.apellido">Apellido no cargado</li>
+    <li *ngIf="this.usuariosDatos.correo">{{this.usuariosDatos.correo}}</li>
+    <li *ngIf="!this.usuariosDatos.correo">Correo no cargado</li>
+    <li *ngIf="this.usuariosDatos.contrasena">{{this.usuariosDatos.contrasena}}</li>
+    <li *ngIf="!this.usuariosDatos.contrasena">Contraseña no cargada</li>
+</ol>
+{{this.textos}}
+{{this.datosobtenidos | json}}
